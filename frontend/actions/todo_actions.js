@@ -11,6 +11,6 @@ export const receiveTodos = (todos) => {
 export const receiveTodo = (todo) => {
   return ({
     todo: todo,
-    type: RECEIVE_TODOS
+    type: RECEIVE_TODO
   });
 };

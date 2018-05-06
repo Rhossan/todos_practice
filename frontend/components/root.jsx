@@ -1,11 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-redux';
-// import App from './app.jsx';
+import {ReactDOM, Provider} from 'react-redux';
+import App from './app';
 
 
-const Root = () => {
+const Root = (props) => {
   return (
-    <h1>helloooooo</h1>
+    <Provider store={props.store}>
+      <App />
+    </Provider>
   );
 };
 // (
